@@ -8,6 +8,7 @@ mkdir ~/bin
         sudo ln -sf ~/bin/repo /usr/bin/repo
 
 git config --global user.name "kelexine"
-        git config --global user.email "frankiekelechi@gmail.com"
+git config --global user.email "frankiekelechi@gmail.com"
 mkdir twrp && cd twrp
-echo "environment setup completed successfully, you can now begin the build"
+echo "environment setup completed successfully,"
+
