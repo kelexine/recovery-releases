@@ -12,6 +12,9 @@ git config --global user.name "kelexine"
 git config --global user.email "frankiekelechi@gmail.com"
 
 cd OrangeFox_sync/sync/
-./orangefox_sync.sh --branch 11.0 --path ~/OrangeFox_11.0
+./orangefox_sync.sh --branch 11.0 --path ~/OrangeFox_11.0 \
 
+cd ~/OrangeFox_11.0 \ git clone https://github.com/kelexine/ofox_device_tecno_kelly device/tecno/kelly
+ \ . build/envsetup.sh \ lunch twrp_kelly-eng && mka clean && mka bootimage -j24
 echo "environment setup completed successfully,"
+https://github.com/kelexine/ofox_device_tecno_kelly device/tecno/kelly
