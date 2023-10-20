@@ -179,14 +179,14 @@ init_script() {
 get_twrp_minimal_manifest() {
   cd $MANIFEST_DIR;
   echo "-- Initialising the $TWRP_BRANCH minimal manifest repo ...";
-  repo init --depth=1 -u $MIN_MANIFEST -b $TWRP_BRANCH -j24;
+  repo init --depth=1 -u $MIN_MANIFEST -b $TWRP_BRANCH;
   [ "$?" != "0" ] && {
    abort "-- Failed to initialise the minimal manifest repo. Quitting.";
   }
   echo "-- Done.";
 
   echo "-- Syncing the $TWRP_BRANCH minimal manifest repo ...";
-  repo sync;
+  repo sync -j24;
   [ "$?" != "0" ] && {
    abort "-- Failed to Sync the minimal manifest repo. Quitting.";
   }
